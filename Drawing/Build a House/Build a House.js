@@ -12,7 +12,7 @@ var processing = new Processing(canvas, function(processing) {
     processing.keyReleased = function () { keyIsPressed = false; };
 
     function getImage(s) {
-        var url = "https://www.kasandbox.org/programming-images/" + s + ".png";
+        var url = "https://raw.githubusercontent.com/Khan/live-editor/master/images/" + s + ".png";
         processing.externals.sketch.imageCache.add(url);
         return processing.loadImage(url);
     }
